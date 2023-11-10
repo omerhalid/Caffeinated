@@ -21,6 +21,6 @@ from cafes import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
-    path('add_cafe/', views.add_cafe, name='add_cafe'),
+    path('add/', views.add_cafe, name='add'),
     path('cafes/', views.cafes, name='cafes')
 ]
