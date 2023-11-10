@@ -3,3 +3,4 @@
 3- connect it to pgAdmin
 4- better ui
 5- move the database details to .env
+6- BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) #come back to this later

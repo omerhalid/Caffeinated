@@ -1,14 +1,31 @@
 {% extends 'cafes/base.html' %}
-{% block title %}Coffee and Wifi{% endblock %}
+
+{% block jumbotron_class %}jumbotron full-height{% endblock %}
+
+{% block title %}Home | Caffeinated{% endblock %}
+
+{% block jumbotron %}
+<div class="container text-center">
+    <h1 class="display-3">Discover Your Next Workspace</h1>
+    <p class="lead">Find cafes with the best coffee, fast Wi-Fi, and ample power outlets.</p>
+    <a class="btn btn-primary btn-lg" href="{% url 'cafes' %}" role="button">Explore Cafes</a>
+</div>
+{% endblock %}
 
 {% block content %}
-<div class="jumbotron text-center">
-    <div class="container">
-        <h1 class="display-4">☕️ Coffee & Wifi 💻</h1>
-        <p class="lead">Want to work in a cafe but need power and wifi?</p>
-        <hr class="my-4">
-        <p>You've found the right place! Checkout my collection of cafes with data on power socket availability, wifi speed, and coffee quality.</p>
-        <a class="btn btn-warning btn-lg" href="{% url 'cafes' %}" role="button">Show Me!</a>
+<!-- Insert additional content sections here -->
+<div class="row my-5">
+    <div class="col-md-4 text-center">
+        <h3>Top-rated Spots</h3>
+        <p>Handpicked cafes with the best reviews and top-notch environments.</p>
+    </div>
+    <div class="col-md-4 text-center">
+        <h3>Workspace Friendly</h3>
+        <p>Spacious tables and comfortable seating to make you feel at home.</p>
+    </div>
+    <div class="col-md-4 text-center">
+        <h3>Quality Beverages</h3>
+        <p>Enjoy a selection of premium coffee and tea while you work or relax.</p>
     </div>
 </div>
 {% endblock %}

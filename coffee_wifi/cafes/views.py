@@ -23,3 +23,7 @@ def cafes(request):
     cafes = Cafe.objects.all()
     return render(request, 'cafes/cafes.html', {'cafes': cafes})
 
+def findImageCoffeeShop():
+    # we will search an image of the coffee shop with using the location url
+    pass
+

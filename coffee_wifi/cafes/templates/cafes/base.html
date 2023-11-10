@@ -4,10 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <title>{% block title %}{% endblock %}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>{% block title %}Caffeinated{% endblock %}</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Barlow', sans-serif;
+            background: #f4f4f4;
+        }
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: #333;
+        }
+        .jumbotron {
+            background: url('/static/dalle.png') no-repeat center center;
+            background-size: cover;
+            padding: 2rem 0;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            margin-bottom: 0;
+        }
+        .footer {
+            background-color: #fafafa;
+            padding: 1rem;
+            text-align: center;
+            border-top: 1px solid #eaeaea;
+        }
+        .form-container {
+            background: #fff;
+            padding: 2rem;
+            margin-top: -5rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,.05);
+            border-radius: 8px;
+        }
+        .form-control, .btn {
+            border-radius: 30px;
+        }
+        .full-height {
+            height: 100vh;
+            padding-top: 10vh; /* Adjust if needed for your design */
+        }
+    </style>
 </head>
 <body>
-    {% block content %}{% endblock %}
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    {% include 'cafes/navbar.html' %}
+    <div class="{% block jumbotron_class %}jumbotron{% endblock %} jumbotron-fluid">
+        <div class="container text-center">
+            {% block jumbotron %}{% endblock %}
+        </div>
+    </div>
+    <div class="container my-5">
+        {% block content %}{% endblock %}
+    </div>
+    <div class="footer">
+        &copy; {{ current_year }} Caffeinated. All rights reserved.
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
