@@ -1,6 +1,6 @@
 # Caffeinated
 
-Caffeinated is a Django web application that provides a platform for coffee lovers to find cafes with amenities like good coffee, WiFi, and power outlets. It's an ideal resource for freelancers, students, and anyone who enjoys working or relaxing in a cafe environment.
+"Caffeinated" is a Django-based web application designed to connect individuals with their perfect cafe spots. Whether you're a remote worker seeking a quiet corner with strong WiFi, a student looking for a late-night study spot, or a coffee enthusiast on the hunt for the best brew, "Caffeinated" offers a curated list of cafes complete with ratings and amenities. This community-driven platform allows users to add their favorite cafes, ensuring a continually updated and diverse selection of locales.
 
 ## Features
 
