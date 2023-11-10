@@ -8,7 +8,14 @@
 - Add new cafe entries through a user-friendly form.
 - Interactive, responsive design for a seamless browsing experience.
 
+## Main Page
 ![Alt text](image.png)
+
+## All Cafes
+![Alt text](image-1.png)
+
+## Add Cafe
+![Alt text](image-2.png)
 
 ## Getting Started
 
