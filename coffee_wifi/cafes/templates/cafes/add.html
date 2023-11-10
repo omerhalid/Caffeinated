@@ -1,17 +1,17 @@
 {% extends 'cafes/base.html' %}
-{% block title %}Add A New Cafe{% endblock %}
+
+{% block title %}Add Cafe | Caffeinated{% endblock %}
 
 {% block content %}
-<div class="container">
-    <div class="row">
-        <div class="col-sm-12 col-md-8">
-            <h1>Add a new cafe into the database</h1>
-            <form method="post">
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 form-container">
+            <h2 class="text-center mb-4">Add a new cafe</h2>
+            <form method="post" class="p-3">
                 {% csrf_token %}
                 {{ form.as_p }}
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary btn-block">Add Cafe</button>
             </form>
-            <p class="space-above"><a href="{% url 'cafes' %}">See all cafes</a></p>
         </div>
     </div>
 </div>
