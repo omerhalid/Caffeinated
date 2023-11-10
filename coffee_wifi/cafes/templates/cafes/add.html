@@ -9,7 +9,34 @@
             <h2 class="text-center mb-4">Add a new cafe</h2>
             <form method="post" class="p-3">
                 {% csrf_token %}
-                {{ form.as_p }}
+                <div class="form-group">
+                    <label for="id_name">Name:</label>
+                    <input type="text" name="name" class="form-control" id="id_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="id_location">Location (URL):</label>
+                    <input type="url" name="location" class="form-control" id="id_location" required>
+                </div>
+                <div class="form-group">
+                    <label for="id_open_time">Open Time:</label>
+                    <input type="time" name="open_time" class="form-control" id="id_open_time" required>
+                </div>
+                <div class="form-group">
+                    <label for="id_close_time">Close Time:</label>
+                    <input type="time" name="close_time" class="form-control" id="id_close_time" required>
+                </div>
+                <div class="form-group">
+                    <label for="id_coffee_rating">Coffee Rating:</label>
+                    <input type="number" name="coffee_rating" class="form-control" id="id_coffee_rating" min="1" max="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="id_wifi_rating">Wifi Rating:</label>
+                    <input type="number" name="wifi_rating" class="form-control" id="id_wifi_rating" min="1" max="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="id_power_outlets">Power Outlets:</label>
+                    <input type="number" name="power_outlets" class="form-control" id="id_power_outlets" required>
+                </div>
                 <button type="submit" class="btn btn-primary btn-block">Add Cafe</button>
             </form>
         </div>

@@ -8,6 +8,8 @@
 - Add new cafe entries through a user-friendly form.
 - Interactive, responsive design for a seamless browsing experience.
 
+![Alt text](image.png)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
